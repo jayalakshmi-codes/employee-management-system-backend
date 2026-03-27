@@ -3,6 +3,12 @@
 This is a REST API backend for the Employee Management System developed using **Spring Boot** and **MySQL**.
 The API provides CRUD operations to manage employee records.
 
+## 🌐 Base URL
+
+👉 https://employee-management-system-backend-production-b85a.up.railway.app/api/employees
+
+---
+
 ## 🚀 Technologies Used
 
 * Java
@@ -12,13 +18,19 @@ The API provides CRUD operations to manage employee records.
 * Maven
 * REST API
 
-## 📌 Features
+## ✨ Features
 
-* Add a new employee
-* View all employees
-* Get employee by ID
-* Update employee details
-* Delete employee
+- 📋 Get all employees  
+- 🔍 Get employee by ID  
+- ➕ Add new employee  
+- ✏️ Update employee details  
+- ❌ Delete employee  
+- 🛡️ Exception handling  
+- ✅ Input validation  
+- 🔐 Basic security implementation  
+- 🔗 Integrated with frontend application  
+
+---
 
 ## 📂 Project Structure
 
@@ -42,14 +54,55 @@ exception   - Global exception handling
 | PUT    | /api/employees/{id} | Update employee    |
 | DELETE | /api/employees/{id} | Delete employee    |
 
-## 🛠️ How to Run
+---
 
-1. Clone the repository
-2. Configure MySQL database in `application.properties`
-3. Run the Spring Boot application
-4. Test APIs using Postman
+## ⚙️ Installation & Setup
 
-## 📌 Author
+### 1. Clone the repository
+```bash
+git clone <your-backend-repo-url>
+```
 
-Jayalakshmi
+### 2. Navigate to project folder
+```bash
+cd employee-management-system-backend
+```
+
+### 3. Configure database
+
+Update `application.properties`:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/your_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+```
+
+### 4. Run the application
+```bash
+mvn spring-boot:run
+```
+
+---
+
+## 🗄️ Database
+
+- MySQL database is used for storing employee data  
+- Hosted on Railway (cloud database)  
+
+---
+
+## 🚀 Deployment
+
+- Backend deployed on Railway  
+- Public API доступ via live URL  
+- Integrated with frontend deployed on Vercel  
+
+---
+
+## 👩‍💻 Author
+
+**Jayalakshmi S**  
+🔗 GitHub: https://github.com/jayalakshmi-codes
 
